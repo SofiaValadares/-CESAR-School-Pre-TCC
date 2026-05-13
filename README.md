@@ -1,8 +1,8 @@
 # Modelo LaTeX para Projeto de Pesquisa - CESAR School
 
-Este repositório contém um template LaTeX customizado e automatizado para a disciplina de **FP7 (Formação Profissional 7)**. O modelo foi projetado para alinhar a produtividade do LaTeX com as exigências visuais e pedagógicas do CESAR.
+Este repositório contém um template LaTeX customizado e automatizado para a disciplina de **FP7**. O modelo foi projetado para alinhar a produtividade do LaTeX com as exigências visuais e pedagógicas do CESAR.
 
-## �� Como Importar para o Overleaf
+## Como Importar para o Overleaf
 
 Para usar este modelo no Overleaf seguindo o fluxo do GitHub:
 
@@ -18,7 +18,7 @@ Para usar este modelo no Overleaf seguindo o fluxo do GitHub:
 
 ---
 
-## �� Guia de Avaliação (Critérios FP7)
+## Guia de Avaliação (Critérios FP7)
 
 Este modelo foi estruturado para ajudar você a cumprir os itens de avaliação detalhados pelo professor (baseado no slide de avaliação):
 
@@ -49,7 +49,7 @@ As citações são geradas automaticamente a partir do arquivo `referencias.bib`
 
 ---
 
-## ��️ Funções Básicas do Overleaf
+## Funções Básicas do Overleaf
 
 1.  **Recompile:** Clique no botão azul (ou `Ctrl + Enter`) para atualizar o PDF.
 2.  **Logs e Erros:** Se o botão de recompile ficar laranja ou vermelho, clique no ícone de "folha" ao lado dele para ver onde está o erro no código.
@@ -59,7 +59,7 @@ As citações são geradas automaticamente a partir do arquivo `referencias.bib`
 
 ---
 
-## �� Organização dos Arquivos
+## Organização dos Arquivos
 - `/chapters`: Cada seção tem seu próprio arquivo `.tex`. Escreva o conteúdo neles.
 - `config/packages.tex`: Altere o espaçamento entre referências (`\bibitemsep`) ou cores.
 - `main.tex`: Onde você define o título do trabalho e os nomes na capa.
