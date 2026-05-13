@@ -1,0 +1,88 @@
+\DocumentMetadata{
+    lang=pt-BR,
+    pdfstandard=ua-2,
+    testphase={phase-III,math,table,title,graphic}
+}
+
+\documentclass[12pt,a4paper]{article}
+
+\input{config/packages}
+\input{config/settings}
+
+\bibliographystyle{abntex2-alf}
+
+\begin{document}
+% =========================================
+% CAPA
+% =========================================
+
+\begin{titlepage}
+
+\begin{center}
+
+{\large \textbf{CENTRO DE ESTUDOS E SISTEMAS AVANÇADOS DO RECIFE}}\\[0.5cm]
+
+{\large GRADUAÇÃO EM CIÊNCIA DA COMPUTAÇÃO}
+
+\vspace{7cm}
+
+{\Large \textbf{<TÍTULO DO PROJETO DE PESQUISA>}}
+
+\vspace{7cm}
+
+<NOME DOS ALUNOS>\\[0.2cm]
+<NOME DO ORIENTADOR>\\[0.2cm]
+<NOME DO CO-ORIENTADOR -- opcional>
+
+\vspace{1.5cm}
+
+Recife, <mês> de 2026.
+
+\end{center}
+
+\end{titlepage}
+
+
+% =========================================
+% INTRODUÇÃO
+% =========================================
+
+\newpage
+\input{chapters/01-introducao}
+
+% =========================================
+% SOLUÇÕES EXISTENTES
+% =========================================
+
+\newpage
+\input{chapters/02-solucoes}
+
+% =========================================
+% FUNDAMENTAÇÃO
+% =========================================
+
+\newpage
+\input{chapters/03-fundamentacao}
+
+% =========================================
+% METODOLOGIA
+% =========================================
+
+\newpage
+\input{chapters/04-metodologia}
+
+% =========================================
+% CRONOGRAMA
+% =========================================
+
+\newpage
+\input{chapters/05-cronograma}
+
+% =========================================
+% REFERÊNCIAS
+% =========================================
+
+\newpage
+\input{chapters/06-referencias}
+
+\end{document}

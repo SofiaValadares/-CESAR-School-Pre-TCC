@@ -1,0 +1,138 @@
+% =========================================
+% FONTE ARIAL (XeLaTeX)
+% =========================================
+
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+% =========================================
+% IDIOMA
+% =========================================
+
+\usepackage[brazil]{babel}
+
+% =========================================
+% LAYOUT DA PÁGINA
+% =========================================
+
+\usepackage[
+    a4paper,
+    top=96pt,
+    bottom=96pt,
+    left=96pt,
+    right=96pt
+]{geometry}
+
+% =========================================
+% CORES
+% =========================================
+
+\usepackage{xcolor}
+
+\definecolor{cesarorange}{RGB}{237,125,49}
+
+% =========================================
+% PACOTES GERAIS
+% =========================================
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage{float}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[alf]{abntex2cite}
+
+% =========================================
+% ESPAÇAMENTO E ALINHAMENTO
+% =========================================
+
+\usepackage{ragged2e}
+
+\AtBeginDocument{
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{15pt}
+}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
+
+\frenchspacing
+
+% =========================================
+% ESTILO DAS SEÇÕES
+% =========================================
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\normalfont\fontsize{14pt}{14pt}\bfseries\raggedright}
+{\thesection.}
+{1.5em}
+{}
+
+\titleformat{\subsection}
+{\normalfont\fontsize{12pt}{12pt}\bfseries\itshape\raggedright}
+{\thesubsection}
+{0.2em}
+{}
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize\raggedright}
+{\thesubsubsection}
+{0.2em}
+{}
+
+% =========================================
+% ESPAÇAMENTO DOS TÍTULOS
+% =========================================
+
+\titlespacing*{\section}
+{0pt}
+{0pt}
+{-14pt}
+
+\titlespacing*{\subsection}
+{4pt}
+{4pt}
+{-15pt} 
+
+\titlespacing*{\subsubsection}
+{4pt}
+{4pt}
+{-15pt}
+
+% =========================================
+% LINKS
+% =========================================
+
+\hypersetup{
+    colorlinks=false,
+    linkcolor=black,   % Cor dos links internos (sumário)
+    urlcolor=black,    % Cor de links externos (sites)
+    citecolor=black    % Cor das citações no texto (Isto remove o colorido das citações)
+}
+
+% =========================================
+% LOGO FIXO EM TODAS AS PÁGINAS
+% =========================================
+
+\usepackage{eso-pic}
+
+\AddToShipoutPictureBG{
+    \put(480,740){
+        \includegraphics[
+            width=3.3cm,
+            alt={Logo CESAR School}
+        ]{images/cesar_school_logo.png}
+    }
+}
+
+% =========================================
+% REMOVE NUMERAÇÃO DAS PÁGINAS
+% =========================================
+
+\pagestyle{empty}
