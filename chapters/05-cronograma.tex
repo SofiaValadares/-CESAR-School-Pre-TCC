@@ -12,3 +12,63 @@
     \centering
     \includegraphics[width=0.9\textwidth]{images/cronograma_exemplo.png}
 \end{figure}
+
+<Modelo de texto preenchivel>
+
+Atividades já realizadas:
+\begin{enumerate}[
+    leftmargin=*,
+    label=\arabic*.,
+    itemsep=0pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+]
+    \item Atividade 01
+    \item Atividade 02
+    \item Atividade 03
+\end{enumerate}
+
+Atividades a serem realizadas:
+\begin{enumerate}[
+    leftmargin=*,
+    label=\arabic*.,
+    start=4,
+    itemsep=0pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+]
+    \item Atividade 04
+    \item Atividade 05
+    \item Atividade 06
+    \item Atividade 07
+    \item Atividade 08
+    \item Atividade 09
+    \item Atividade 10
+\end{enumerate}
+
+\vspace{-4pt}
+\begin{table}[H]
+    \centering
+    \caption{Cronograma das Atividades (Ago/26 -- Nov/26)}
+    \label{tab:cronograma-2026}
+    \scriptsize
+    \setlength{\tabcolsep}{2pt}
+    \renewcommand{\arraystretch}{1.05}
+
+    \newcommand{\wk}{\cellcolor{black!25}}
+
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{1.6cm}|*{16}{>{\centering\arraybackslash}X|}}
+        \hline
+        & \multicolumn{16}{c|}{\textbf{Semanas}} \\ \hline
+        \textbf{Atividade} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\ \hline
+        4  & \wk  & \wk & \wk &      &      &      &      &      &      &      &      &      &      &      &      &    \\ \hline
+        5  & \wk  & \wk & \wk & \wk  &      &      &      &      &      &      &      &      &      &      &      &    \\ \hline
+        6  & \wk  & \wk & \wk & \wk  & \wk  &      &      &      &      &      &      &      &      &      &      &    \\ \hline
+        7  &      &      & \wk & \wk  & \wk  & \wk  & \wk  &      &      &      &      &      &      &      &      &    \\ \hline
+        8  &      &      &      &      & \wk  & \wk  & \wk  & \wk  & \wk  &      &      &      &      &      &      &    \\ \hline
+        9  &      &      &      &      & \wk  & \wk  & \wk  & \wk  & \wk  & \wk  &      &      &      &      &      &    \\ \hline
+        10 &      &      & \wk & \wk  & \wk  & \wk  & \wk  & \wk  & \wk  & \wk  &      &      &      &      &      &    \\ \hline
+    \end{tabularx}
+\end{table}

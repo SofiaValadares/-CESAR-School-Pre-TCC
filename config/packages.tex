@@ -23,13 +23,6 @@
     right=96pt
 ]{geometry}
 
-% =========================================
-% CORES
-% =========================================
-
-\usepackage{xcolor}
-
-\definecolor{cesarorange}{RGB}{237,125,49}
 
 % =========================================
 % PACOTES GERAIS
@@ -38,22 +31,47 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 
+% Legendas (figuras e tabelas)
+\usepackage{caption}
+
+\DeclareCaptionFont{legendafont}{
+    \fontsize{10pt}{12pt}\selectfont
+}
+
+\captionsetup{
+    font=legendafont
+}
+
+\usepackage{enumitem}
+
 \usepackage{float}
+\usepackage[section]{placeins} % impede figuras/tabelas de irem muito longe (não ultrapassam a seção)
 \usepackage{array}
+\usepackage[table]{xcolor} % cores em tabelas (cronograma)
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage[alf]{abntex2cite}
+\usepackage{tabularx}
 
+% =========================================
+% CÁLCULOS E AUTOMATIZAÇÃO (FÓRMULA GERAL)
+% =========================================
+\usepackage{xfp}
+\usepackage{siunitx}
+\sisetup{output-decimal-marker = {,}}
+
+% Comando: \media{soma}{quantidade}
+\newcommand{\media}[2]{%
+    \num{\fpeval{round((#1)/(#2), 1)}}%
+}
 % =========================================
 % ESPAÇAMENTO E ALINHAMENTO
 % =========================================
-
 \usepackage{ragged2e}
-
-\AtBeginDocument{
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{15pt}
+\AtBeginDocument{%
+    \setlength{\parindent}{0pt}%
+    \setlength{\parskip}{15pt}%
 }
 
 \hyphenpenalty=10000
